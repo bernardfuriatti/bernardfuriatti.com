@@ -1,0 +1,76 @@
+/* BASE */
+@import "base/_base";
+
+/* MODULES */
+@import "modules/_modules";
+
+/* COMPONENTS */
+@import "components/_components";
+
+body{
+  font-family: $font-base;
+  color: $textos;
+}
+
+.section{
+
+    &--full{
+        height: 100vh;
+        width: 100vw;
+    }    
+}
+/*
+* Primeira Sessão - Banner
+*/
+.firstSection{
+    
+    background-repeat: no-repeat;
+    @include linear-gradient-blend-mode (30, 50,black, 40, rgb(14,17,25),34%, rgb(42,46,61),100%, url('../images/foto--meBanner.png'), lighten );
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+.callMain{
+    position: relative;
+    top: 40vh;
+}
+
+.callMain--space{
+    display: inline-block;
+    width: 45vw;         
+}
+
+.callMain--text{
+    display: inline-block;
+    width: 50vw;
+
+    h1{
+        padding-bottom: 16px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 991px) {
+    .firstSection{
+        background-position: 50% 25%;
+        background-size: contain, 60vw;
+
+    }
+    .callMain--space{
+        display: none;         
+    }
+
+    .callMain{
+        top: 60vh;
+    }
+    .callMain--text{
+        display: initial;
+        text-align: center;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+
+  }
+  @media (min-width: 1200px) {
+    
+  }

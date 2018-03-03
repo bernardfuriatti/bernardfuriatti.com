@@ -1,0 +1,30 @@
+// icons sizes
+.icon{
+    display: inline-block;
+    &--16px {
+        height: 16px;
+        width: 16px;
+    }
+    &--24px {
+        height: 24px;
+        width: 24px;
+    }
+    &--32px {
+        height: 32px;
+        width: 32px;
+    }
+    &--56px {
+        height: 56px;
+        width: 56px;
+    }
+
+    &--64px {
+        height: 64px;
+        width: 64px;
+    }
+
+    &--bernardfuriatti{
+        height: 56px;
+        width: 56px;
+    }
+}

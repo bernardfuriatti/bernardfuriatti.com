@@ -1,0 +1,79 @@
+// class for big titles
+
+.font--headline{
+  @include font-custom(700);
+  @include font-size(130px);
+  @include font-structure(1.2);
+  @include font-spacing(-1.2);
+}
+
+// class for section titles
+
+.font--title{
+  @include font-custom(700);
+  @include font-size(55px);
+  @include font-structure(1.2);
+  @include font-spacing(-1.2);
+}
+
+// class for subtitles
+
+.font--subtitle{
+  @include font-custom(100);
+  @include font-size(40px);
+  @include font-structure(1.2);
+  @include font-spacing(1.2);
+}
+
+.font--subtitle-strong{
+  @include font-custom(600);
+  @include font-size(40px);
+  @include font-structure(1.2);
+  @include font-spacing(1.2);
+}
+// class for descriptions
+
+.font--description{
+  @include font-custom(300);
+  @include font-size(32px);
+  @include font-structure(1.2);
+  @include font-spacing(-1.2);
+}
+
+// class for normal text, it's also the default value on body
+
+.font--copy{
+  @include font-custom(200);
+  @include font-size(20px);
+  @include font-structure(1.2);
+  @include font-spacing(0);
+}
+
+.font--copy-strong{
+  @include font-custom(600);
+  @include font-size(20px);
+  @include font-structure(1.2);
+  @include font-spacing(0);
+}
+
+// class for sub descriptions
+
+.font--sub{
+  @include font-custom(200);
+  @include font-size(18px);
+  @include font-structure(1.2);
+}
+
+// class for colors fonts
+
+.font--white{
+  @include font-color(rgba(255, 255, 255, 1.0));
+}
+
+.font--white-transparence{
+  @include font-color(rgba(255, 255, 255, 0.72));
+}
+
+.font--black{
+  @include font-color(black);
+}

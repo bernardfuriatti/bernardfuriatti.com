@@ -1,0 +1,46 @@
+// // we'll need to change variable names later, ok? ok!
+//
+.azul-fixa{
+  background-color: $azul-fixa;
+}
+
+.verde-variavel{
+  background-color: $verde-variavel;
+}
+
+.rosa{
+  background-color: $rosa;
+}
+
+.roxo{
+  background-color: $roxo;
+}
+
+.baixo{
+  background-color: $baixo;
+}
+
+.alto{
+  background-color: $alto;
+}
+
+.textos{
+  background-color: $textos;
+}
+
+.textos-alt{
+  background-color: $textos-alt;
+}
+
+.linhas{
+  background-color: $linhas;
+}
+
+.fundo-cinza{
+  background-color: $fundo-cinza;
+}
+
+
+.gradient{
+  @include linear-gradient(#39f, 320, #39f, 0%, #60e198, 100%);
+}

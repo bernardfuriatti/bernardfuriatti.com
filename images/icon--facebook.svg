@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3490 41 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="icon--facebook" transform="translate(1779 -20)">
+    <g id="_34304" data-name="34304" transform="translate(1608.305 66.999)">
+      <path id="Facebook" class="cls-1" d="M117.117,4.649v3.3H114.7v4.041h2.421V24h4.973V11.994h3.337s.313-1.937.464-4.056h-3.782V5.176a1.174,1.174,0,0,1,1.078-.968H125.9V0h-3.684C116.994,0,117.117,4.045,117.117,4.649Z" transform="translate(0 0)"/>
+    </g>
+    <rect id="Rectangle_843" data-name="Rectangle 843" class="cls-2" width="36" height="36" transform="translate(1711 61)"/>
+  </g>
+</svg>

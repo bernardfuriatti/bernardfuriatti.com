@@ -1,0 +1,104 @@
+// buttons
+
+
+.btn{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+  }
+
+
+  &:hover{
+    &:before {
+        opacity: 1;
+    }
+    .btn-icon{
+      right: -10px;
+    }
+  }
+  .btn-text{
+    z-index: 2;
+    position: relative;
+  }
+
+  .btn-icon{
+    font-size: 13px;
+    margin-left: 19px;
+    z-index: 2;
+    right: 0;
+    position: relative;
+    vertical-align: -1px;
+    -webkit-transition: right .4s ease;
+    transition: right .4s ease;
+  }
+}
+
+.btn--dark{
+  background: transparent;
+  color: #000;
+  border-color: #000;
+
+  &:before{
+    background: #000;
+  }
+
+  &:hover{
+    .btn-text{
+      color: #FFF;
+    }
+  }
+}
+
+.btn--light{
+  background: transparent;
+  color: #FFF;
+  border-color: #FFF;
+
+  &:before{
+    background: #fff;
+  }
+
+  &:hover{
+    .btn-text{
+      color: #000;
+    }
+  }
+}
+.btn--lg{
+  border-width: 2px;
+  border-style: solid;
+  padding: 22px 50px;
+  @include font-size(14px);
+  font-weight: 500;
+}
+
+.btn--color{
+  background: #fff;
+  color: #000;
+  border-color: transparent;
+
+  &:before{
+    @include linear-gradient(#39f, 320, #39f, 0%, #60e198, 100%);
+  }
+
+  &:hover{
+    .btn-text{
+      color: #FFF;
+    }
+  }
+}

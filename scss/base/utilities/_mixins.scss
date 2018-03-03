@@ -1,0 +1,97 @@
+/* HELPERS */
+
+// transitions
+// ex: @include transition(color .3s ease);
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+// opacity
+// ex: @include opacity(0.8);
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+
+
+// colour mixins
+
+@mixin linear-gradient(
+$bg-color,
+$angle,
+$start-color,
+$start-point,
+$end-color,
+$end-point
+)
+{
+  background-color: $bg-color;
+  background-image:    -webkit-linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point);
+  background-image:    -moz-linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point);
+  background-image:    -ms-linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point);
+  background-image:    -o-linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point);
+  background-image:    linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point);
+}
+
+@mixin linear-gradient-blend-mode(
+$bg-position-x,
+$bg-position-y,
+$bg-color,
+$angle,
+$start-color,
+$start-point,
+$end-color,
+$end-point,
+$image,
+$blend-mode
+)
+{
+  background-position: ($bg-position-x * 1%) ($bg-position-y * 1%);
+  background-color: $bg-color;
+  background-image:    -webkit-linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point), url('../images/foto--meBanner.png');
+  background-image:    -moz-linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point), url('../images/foto--meBanner.png');
+  background-image:    -ms-linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point), url('../images/foto--meBanner.png');
+  background-image:    -o-linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point), url('../images/foto--meBanner.png');
+  background-image:    linear-gradient(($angle * 1deg), $start-color $start-point, $end-color $end-point), url('../images/foto--meBanner.png');
+  background-blend-mode: $blend-mode;
+}
+
+
+// font functions
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+// font mixins
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin font-custom($font-weight: 300){
+  font-family: $font-base;
+  font-weight: $font-weight;
+}
+
+@mixin font-structure($line-height){
+  line-height: $line-height
+}
+
+@mixin font-spacing($letter-spacing){
+  letter-spacing: $letter-spacing + px;
+}
+
+@mixin font-color ($color){
+  color: $color;
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="3575 41 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="icon--dribbble" transform="translate(1779 -20)">
+    <g id="dribbble" transform="translate(1782.164 47.155)">
+      <path id="Path_18" data-name="Path 18" class="cls-1" d="M42.42,31.844A10.584,10.584,0,1,1,31.837,21.259,10.6,10.6,0,0,1,42.42,31.844Zm-10.583-12a12,12,0,1,0,12,12A12.013,12.013,0,0,0,31.837,19.845Z" transform="translate(0 0)"/>
+      <path id="Path_19" data-name="Path 19" class="cls-1" d="M160.3,36.688h0c.083.1,8.41,10.3,8.811,20.558l1.416-.055c-.422-10.743-8.779-20.975-9.134-21.4l-1.092.9Z" transform="translate(-133.325 -15.133)"/>
+      <path id="Path_20" data-name="Path 20" class="cls-1" d="M28.907,96.347c.122.033,12.167,3.281,19.718-6.226l-1.11-.88c-6.97,8.776-18.113,5.775-18.224,5.742l-.384,1.364Z" transform="translate(-8.611 -65.87)"/>
+      <path id="Path_21" data-name="Path 21" class="cls-1" d="M92.456,245.7v0c.25-.484,6.257-11.75,17.95-7.213l.515-1.32c-12.89-5-19.655,7.753-19.724,7.883Z" transform="translate(-67.736 -205.177)"/>
+    </g>
+    <rect id="Rectangle_844" data-name="Rectangle 844" class="cls-2" width="36" height="36" transform="translate(1796 61)"/>
+  </g>
+</svg>
